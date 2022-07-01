@@ -1,0 +1,26 @@
+{
+  "name": "matheus-nazario---backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon express-fs-static.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bc-fullstack-01/Matheus-Nazario---Backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bc-fullstack-01/Matheus-Nazario---Backend/issues"
+  },
+  "homepage": "https://github.com/bc-fullstack-01/Matheus-Nazario---Backend#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  }
+}
