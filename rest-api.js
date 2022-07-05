@@ -8,9 +8,9 @@ app.use(bodyParser.json())
 
 router.route("/")
     .all((req, res, next) => {
-        console.log('Request from : ${req.originalUrl}')
-        console.log('Request type : {req.method}')
-        console.log('Request params : ${req.params}')
+        console.log(`Request from : ${req.originalUrl}`)
+        console.log(`Request type : ${req.method}`)
+        console.log(`Request params : ${req.params}`)
         next();
 })
 
@@ -29,10 +29,10 @@ router.route("/")
 
 router
     .param('id', (req, res, next, id) => {
-        console.log('Request from : ${req.params}')
-        console.log('Request type : ${req.method}')
-        console.log('Request id : ${id}')
-        nest()
+        console.log(`Request from : ${req.params}`)
+        console.log(`Request type : ${req.method}`)
+        console.log(`Request id : ${id}`)
+        next()
     })
 
     .route("/:id")
